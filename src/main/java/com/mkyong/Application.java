@@ -13,6 +13,14 @@ import com.examples.web.book.Book;
 import com.examples.web.book.service.BookService;
 
 import java.util.Map;
+
+/**
+ * 
+ * @author Sandhya
+ * Command Line Runner Application
+ *
+ */
+
 @SpringBootApplication
 public class Application implements CommandLineRunner {
 
@@ -31,12 +39,12 @@ public class Application implements CommandLineRunner {
 
         printElasticSearchInfo();
 
-        bookService.save(new Book("1001", "Elasticsearch Basics", "Rambabu Posa", "23-FEB-2017"));
-        bookService.save(new Book("1002", "Apache Lucene Basics", "Rambabu Posa", "13-MAR-2017"));
-        bookService.save(new Book("1003", "Apache Solr Basics", "Rambabu Posa", "21-MAR-2017"));
+        bookService.save(new Book("1001", "Elasticsearch Basics", "Sandhya", "23-FEB-2018"));
+        bookService.save(new Book("1002", "Apache Lucene Basics", "Sandhya", "13-FEB-2018"));
+        bookService.save(new Book("1003", "Apache Solr Basics", "Sandhya", "21-FEB-2018"));
 
         //fuzzey search
-        Page<Book> books = bookService.findByAuthor("Rambabu", new PageRequest(0, 10));
+        Page<Book> books = bookService.findByAuthor("Sandhya", new PageRequest(0, 10));
 
         //List<Book> books = bookService.findByTitle("Elasticsearch Basics");
 

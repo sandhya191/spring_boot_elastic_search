@@ -20,6 +20,13 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.Assert.*;
 
+/**
+ * 
+ * @author Sandhya
+ * Template of Book Service 
+ *
+ */
+
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = Application.class)
 public class BookServiceTest {
@@ -41,7 +48,7 @@ public class BookServiceTest {
     @Test
     public void testSave() {
 
-        Book book = new Book("1001", "Elasticsearch Basics", "Rambabu Posa", "23-FEB-2017");
+        Book book = new Book("1001", "Elasticsearch Basics", "Sandhya", "23-FEB-2017");
         Book testBook = bookService.save(book);
 
         assertNotNull(testBook.getId());

@@ -8,6 +8,13 @@ import com.examples.web.book.Book;
 
 import java.util.List;
 
+/**
+ * 
+ * @author Sandhya
+ * Page request and responces of Book Service
+ *
+ */
+
 public interface BookService {
 
     Book save(Book book);

@@ -3,6 +3,13 @@ package com.examples.web.book;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 
+/**
+ * 
+ * @author Sandhya
+ * Details about Book of Service
+ *
+ */
+
 @Document(indexName = "mkyong", type = "books")
 public class Book {
 
